@@ -1,0 +1,73 @@
+{
+  "name": "auth-flow",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Small description for auth-flow goes here",
+  "license": "MIT",
+  "author": "",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "repository": "",
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember test",
+    "precommit": "lint-staged",
+    "prepush": "npm test"
+  },
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.5",
+    "ember-cli": "~2.16.2",
+    "ember-cli-app-version": "^3.0.0",
+    "ember-cli-babel": "^6.6.0",
+    "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-eslint": "^4.0.0",
+    "ember-cli-htmlbars": "^2.0.1",
+    "ember-cli-htmlbars-inline-precompile": "^1.0.0",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-mirage": "^0.3.4",
+    "ember-cli-qunit": "^4.0.0",
+    "ember-cli-sass": "^7.0.0",
+    "ember-cli-shims": "^1.1.0",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^2.0.0",
+    "ember-data": "~2.16.2",
+    "ember-load-initializers": "^1.0.0",
+    "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-modal-dialog": "^2.3.0",
+    "ember-native-dom-helpers": "^0.5.4",
+    "ember-resolver": "^4.0.0",
+    "ember-simple-auth": "^1.4.0",
+    "ember-source": "~2.16.0",
+    "ember-test-selectors": "^0.3.7",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-ember": "^4.5.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "liquid-fire": "^0.28.1",
+    "liquid-wormhole": "^2.1.1",
+    "loader.js": "^4.2.3",
+    "prettier": "^1.7.4"
+  },
+  "engines": {
+    "node": "6.* || >= 8.*"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
