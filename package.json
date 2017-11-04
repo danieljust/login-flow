@@ -16,7 +16,8 @@
     "test": "ember test",
     "precommit": "lint-staged",
     "prepush": "npm test",
-    "ci": "lint-staged && npm test"
+    "lint":"eslint",
+    "ci": "npm run lint && npm test"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
